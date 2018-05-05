@@ -1,0 +1,27 @@
+//
+//  PrefixMain.pch
+//  PMPLife
+//
+//  Created by ChenQianPing on 16/2/21.
+//  Copyright © 2016年 ChenQianPing. All rights reserved.
+//
+
+#define ISDEBUG
+
+// 定义变量
+#import "Const.h"
+#import "UrlDefine.h"
+
+// 第三方组件
+#import "AFNetworking.h"
+#import "MBProgressHUD.h"
+#import "UIImageView+WebCache.h"
+
+// 实用工具
+
+// 正式环境不输出日志
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif

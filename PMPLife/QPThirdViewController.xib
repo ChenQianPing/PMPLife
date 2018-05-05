@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QPThirdViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pB-Ol-byB">
+                    <rect key="frame" x="-10" y="-10" width="150" height="164"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="H8j-QW-G4j"/>
+                        <constraint firstAttribute="height" constant="164" id="Sgk-Mm-it8"/>
+                    </constraints>
+                    <state key="normal" image="cover01.png"/>
+                    <connections>
+                        <action selector="btnPdfOne:" destination="-1" eventType="touchUpInside" id="DUb-HU-G0y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpL-by-Lcx">
+                    <rect key="frame" x="110" y="-10" width="150" height="164"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="164" id="9aa-O0-6JU"/>
+                        <constraint firstAttribute="width" constant="150" id="exZ-Wl-hSi"/>
+                    </constraints>
+                    <state key="normal" image="cover02.png"/>
+                    <connections>
+                        <action selector="btnPdfTwo:" destination="-1" eventType="touchUpInside" id="iqh-yt-7Wh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WpL-by-Lcx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="110" id="4NZ-ay-PpV"/>
+                <constraint firstItem="3pB-Ol-byB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-10" id="Mzv-Mx-w7q"/>
+                <constraint firstItem="3pB-Ol-byB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-10" id="O6l-iu-9oI"/>
+                <constraint firstItem="WpL-by-Lcx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-10" id="SNs-Mc-QpJ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cover01.png" width="150" height="174"/>
+        <image name="cover02.png" width="150" height="173"/>
+    </resources>
+</document>
